@@ -1,0 +1,25 @@
+<div class="container">
+	<p><%= "github user profile: #{@data['name']}" %></p>
+	<%= image_tag @data['avatar_url'] ,:size => '260x260'%>
+	<h3>Repos</h3>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Reopo Name</th>
+        <th scope="col">Full Name</th>
+        <th scope="col">owner Name</th>
+      </tr>
+    </thead>
+    <tbody>
+  	<% @repos.each do |repo| %>
+      <tr>
+        <td><%= "#{repo['id']}"%></td>
+  			<td><%= "#{repo['name']}"%></td>
+  			<td><%= "#{repo['full_name']}"%></td>
+        <td><%= "#{repo['owner']['login']}"%></td>
+      </tr>
+  	<% end %>
+    </tbody>
+  </table>
+</div>

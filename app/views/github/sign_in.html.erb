@@ -1,0 +1,10 @@
+<div class="container">	
+	<button type="button" class="btn btn-outline-success">
+		<%= link_to 'Signin with Github', "https://github.com/login/oauth/authorize?client_id=#{@client_id}&redirect_uri=#{@redirect_uri}"%>
+	</button>
+</div>				
+<style type="text/css">
+	button {
+	  margin-top: 10rem;
+	}	
+</style>
