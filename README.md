@@ -21,4 +21,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Please ADD export CLIENT_ID and export export CLIENT_SECRET to .bashrc file
